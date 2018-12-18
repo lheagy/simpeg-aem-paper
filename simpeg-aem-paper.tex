@@ -152,7 +152,7 @@ In what follows, we will demonstrate the use of SimPEG for simulations and inver
 
 \section{NUMERICAL EXAMPLES}
 In the examples that follow, we will use a model of a conductive, vertical plate in a resistive half-space. This is a problem of relevance in mineral exploration, brings to light a number of fundamental aspects of electromagnetics, and is a challenging inverse problem, particularly as 1D inversions cannot explain the 3D nature of the model. We will look at the behaviour of currents through time and demonstrate the multi-dimensional nature of the EM responses and then conduct 1D and 2D inversions of synthetic airborne TDEM data over the plate. The examples have purposefully been kept computationally lightweight so that they can be run in a moderate amount of time on a modern laptop. The source code for each of these examples is available as a Jupyter notebook at
-\href{https://github.com/simpeg-research/heagy-2018-AEM}{https://github.com/simpeg-research/heagy-2018-AEM}.
+\href{https://github.com/simpeg-research/heagy-2018-AEM}{https://github.com/simpeg-research/heagy-2018-AEM} \citep{Heagy2018}.
 
 \subsection{Airborne TDEM response over a conductive plate}
 The model and simulation mesh we consider is shown in Figure \ref{fig:model}. A 100 m thick conductive plate (0.1 S/m) is embedded 50 m below the surface. The plate is 400 m tall and extends 850 m along the x-axis. The background conductivity is $10^{-3}$ S/m. One line of airborne TDEM data is computed along y=0m; the source waveform is a step-off waveform, and vertical $db/dt$ data are collected at 21 time-channels between 0.05 and 2.5ms. The simulation is performed in 3D on a tensor mesh.
