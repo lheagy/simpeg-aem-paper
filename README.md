@@ -1,5 +1,7 @@
 # Open source software for simulations and inversions of airborne electromagnetic data
 
+_Lindsey J. Heagy, Seogi Kang, Rowan Cockett and Douglas W. Oldenburg_
+
 Submitted to Exploration Geophysics for the special edition to the Proceedings of the 2018 Conference on Airborne Electromagnetics held in Denmark.
 
 ## Abstract
