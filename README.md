@@ -1,6 +1,6 @@
 # Open source software for simulations and inversions of airborne electromagnetic data
 
-Paper about airborne EM inversions with SimPEG. Submitted to Exploration Geophysics for the special edition to the Proceedings of the 2018 Conference on Airborne Electromagnetics held in Denmark.
+Submitted to Exploration Geophysics for the special edition to the Proceedings of the 2018 Conference on Airborne Electromagnetics held in Denmark.
 
 ## Abstract
 
@@ -8,8 +8,8 @@ Inversions of airborne EM data are often an iterative process, not only requirin
 
 ## Notebooks
 
-[![Binder](https://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/simpeg-research/heagy_2018_AEM/master)
-[![Azure](https://notebooks.azure.com/launch.png)](https://notebooks.azure.com/import/gh/simpeg-research/heagy_2018_emcyl)
+[![Binder](https://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/simpeg-research/heagy-2018-AEM/master)
+[![Azure](https://notebooks.azure.com/launch.png)](https://notebooks.azure.com/import/gh/simpeg-research/heagy-2018-AEM)
 [![Zenodo](https://zenodo.org/badge/124603211.svg)](https://zenodo.org/badge/latestdoi/124603211)
 
 The examples shown were produced using the Jupyter notebooks available at: https://github.com/simpeg-research/heagy-2018-aem
