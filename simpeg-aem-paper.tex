@@ -9,104 +9,6 @@
 \newcommand{\rs}[1]{\mathstrut\mbox{\scriptsize\rm #1}}
 \newcommand{\rr}[1]{\mbox{\rm #1}}
 
-%% =============================================================================
-%% My eqs
-%% =============================================================================
-\newcommand{\SimPEG}{\textsc{SimPEG}\xspace}
-\renewcommand{\div}{\nabla\cdot}
-\newcommand{\grad}{\nabla}
-\newcommand{\curl}{{\vec \nabla}\times}
-\newcommand {\J}{{\vec J}}
-\renewcommand{\H}{{\vec H}}
-\newcommand {\E}{{\vec E}}
-\newcommand{\siginf}{\sigma_\infty}
-\newcommand{\dsig}{\triangle\sigma}
-\newcommand{\dcurl}{{\mathbf C}}
-\newcommand{\dgrad}{{\mathbf G}}
-\newcommand{\Acf}{{\mathbf A_c^f}}
-\newcommand{\Ace}{{\mathbf A_c^e}}
-\renewcommand{\S}{{\mathbf \Sigma}}
-\newcommand{\St}{{\mathbf \Sigma_\tau}}
-\newcommand{\T}{{\mathbf T}}
-\newcommand{\Tt}{{\mathbf T_\tau}}
-\newcommand{\diag}{\mathbf{diag}}
-\newcommand{\M}{{\mathbf M}}
-\newcommand{\MfMui}{{\M^f_{\mu^{-1}}}}
-\newcommand{\MfMuoi}{{\M^f_{\mu_0^{-1}}}}
-\newcommand{\dMfMuI}{{d_m (\M^f_{\mu^{-1}})^{-1}}}
-\newcommand{\dMfMuoI}{{d_m (\M^f_{\mu_0^{-1}})^{-1}}}
-\newcommand{\MeSig}{{\M^e_\sigma}}
-\newcommand{\MeSigInf}{{\M^e_{\sigma_\infty}}}
-\newcommand{\MeSigInfEtab}{{\M^e_{\sigma_\infty \bar{\eta}}}}
-\newcommand{\MeSigInfEtat}{{\M^e_{\sigma_\infty \peta}}}
-\newcommand{\MedSig}{{\M^e_{\triangle\sigma}}}
-\newcommand{\MeSigO}{{\M^e_{\sigma_0}}}
-\newcommand{\Me}{{\M^e}}
-\newcommand{\Js}{\mathbf{J}^s}
-\newcommand{\Mes}[1]{{\M^e_{#1}}}
-\newcommand{\Mee}{{\M^e_e}}
-\newcommand{\Mej}{{\M^e_j}}
-\newcommand{\BigO}[1]{\mathcal{O}\bigl(#1\bigr)}
-\newcommand{\bE}{\mathbf{E}}
-\newcommand{\bEp}{\mathbf{E}^p}
-\newcommand{\bB}{\mathbf{B}}
-\newcommand{\bBp}{\mathbf{B}^p}
-\newcommand{\bEs}{\mathbf{E}^s}
-\newcommand{\bBs}{\mathbf{B}^s}
-\newcommand{\bH}{\mathbf{H}}
-\newcommand{\B}{\vec{B}}
-\newcommand{\D}{\vec{D}}
-\renewcommand{\H}{\vec{H}}
-\newcommand{\s}{\vec{s}}
-\newcommand{\bfJ}{\bf{J}}
-\newcommand{\vecm}{\vec m}
-\renewcommand{\Re}{\mathsf{Re}}
-\renewcommand{\Im}{\mathsf{Im}}
-\renewcommand {\j}  { {\vec j} }
-\newcommand {\h}  { {\vec h} }
-\renewcommand {\b}  { {\vec b} }
-\newcommand {\e}  { {\vec e} }
-\renewcommand {\d}  { {\vec d} }
-\renewcommand {\u}  { {\vec u} }
-
-\renewcommand {\dj}  { {\mathbf{j} } }
-\renewcommand {\dh}  { {\mathbf{h} } }
-\newcommand {\db}  { {\mathbf{b} } }
-\newcommand {\de}  { {\mathbf{e} } }
-
-\newcommand{\vol}{\mathbf{v}}
-\newcommand{\I}{\vec{I}}
-\newcommand{\A}{\mathbf{A}}
-\newcommand{\bI}{\mathbf{I}}
-\newcommand{\bus}{\mathbf{u}^s}
-\newcommand{\brhss}{\mathbf{rhs}_s}
-\newcommand{\bup}{\mathbf{u}^p}
-\newcommand{\brhs}{\mathbf{rhs}}
-%%-------------------------------
-\newcommand{\bon}{b^{on}(t)}
-\newcommand{\bp}{b^{p}}
-\newcommand{\dbondt}{\frac{db^{on}(t)}{dt}}
-\newcommand{\dfdt}{\frac{df(t)}{dt}}
-\newcommand{\dfdtdsiginf}{\frac{\partial\frac{df(t)}{dt}}{\partial\siginf}}
-\newcommand{\dfdsiginf}{\frac{\partial f(t)}{\partial\siginf}}
-\newcommand{\dbgdsiginf}{\frac{\partial b^{Impulse}(t)}{\partial\siginf}}
-\newcommand{\digint}{\frac{2}{\pi}\int_0^{\infty}}
-\newcommand{\Gbiot}{\mathbf{G}_{Biot}}
-%%-------------------------------
-\newcommand{\peta}{\tilde{\eta}}
-\newcommand{\eFmax}{\e^{\ F}_{max}}
-\newcommand{\eref}{\e^{\ ref}}
-\newcommand{\jref}{\j^{\ ref}}
-\newcommand{\dip}{d^{IP}}
-\newcommand{\sigpert}{\delta\sigma}
-\newcommand{\bzip}{b_z^{IP}}
-\newcommand{\dbzdtip}{\frac{\partial b_z^{IP}}{\partial t}}
-\newcommand{\boldeta}{\boldsymbol{\eta}}
-\newcommand{\boldtau}{\boldsymbol{\tau}}
-\newcommand{\boldc}{\boldsymbol{c}}
-\newcommand{\boldsiginf}{\boldsymbol{\sigma}_{\infty}}
-\newcommand{\boldpeta}{\boldsymbol{\peta}}
-
 
 \begin{document}
 
@@ -121,7 +23,20 @@
 University of British Columbia, Canada\\
 BC, Vancouver}
 
-\author{Lindsey J. Heagy\footnotemark[1], Seogi Kang, Rowan Cockett and Douglas W. Oldenburg}
+\author{Lindsey J. Heagy\footnotemark[1],\footnotemark[2] Seogi Kang\footnotemark[2], Rowan Cockett\footnotemark[2] and Douglas W. Oldenburg\footnotemark[2]\\[16pt]
+% affiliations
+{\normalfont \small
+\footnotemark[1]
+Corresponding author: lheagy@eos.ubc.ca \\
+\footnotemark[2]
+Geophysical Inversion Facility, University of British Columbia
+}\\[16pt]
+% keywords
+{
+\normalfont \small
+Keywords: Airborne electromagnetics, Electromagnetic geophysics, Inversion, Programming, 3D modelling
+}
+}
 
 \footer{Open source software for AEM}
 \lefthead{Heagy et al., 2018}
@@ -181,7 +96,7 @@ The synthetic data generated in this simulation are shown in Figure \ref{fig:dat
 \begin{figure}[!htb]
   \centering
   \includegraphics[width=0.95\textwidth]{figures/magnetic_flux.png}
-  \caption{Magnetic flux density at in the y=0m cross-section. The source and receiver location is shown by the green dot.}
+  \caption{Magnetic flux density along the y=0m cross-section. The source and receiver location is shown by the green dot.}
   \label{fig:magnetic_flux}
 \end{figure}
 
@@ -196,7 +111,7 @@ At intermediate times (0.1ms) the background field has set up strong vortex curr
 \subsection{Stitched 1D inversion of AEM data}
 When inverting airborne EM data, 1D inversions are commonplace. They have the benefit that each sounding is a relatively inexpensive computation and that the inversion can be readily parallelized over soundings. A basic 1D inversion will treat each sounding independently; more advanced 1D inversions may include lateral or spatial constraints in the regularization to promote smooth variation in the model between stations \citep{Viezzoli2008,Viezzoli2009}. For this example, we adopt the basic approach, inverting and regularizing each sounding independently. The extension to laterally or spatially constrained regularization can be considered within the SimPEG framework.
 
-For each of the 1D inversions, the forward simulation is conducted on a cylindrically symmetric mesh. We perform a Tikhonov-style inversion \cite{Tikhonov1977}, which states the inverse problem as an optimization problem in which we minimize an objective function composed of a data-misfit term, $\phi_d$, and a regularization functional, $\phi_m$.
+For each of the 1D inversions, the forward simulation is conducted on a cylindrically symmetric mesh. We perform a Tikhonov-style inversion \citep{Tikhonov1977}, which states the inverse problem as an optimization problem in which we minimize an objective function composed of a data-misfit term, $\phi_d$, and a regularization functional, $\phi_m$.
 \begin{equation}
 \begin{split}
 &\underset{\mathbf{m}}{\text{minimize}} \quad \phi(\mathbf{m}) = \phi_d(\mathbf{m}) + \beta \phi_m(\mathbf{m}) \\
@@ -227,7 +142,7 @@ The first approach we take to invert the data is a conventional voxel-based inve
 \begin{figure}[!htb]
   \centering
   \includegraphics[width=0.7\textwidth]{figures/2Dvoxel_inversion.png}
-  \caption{(a) Recovered conductivity model from 2D TDEM inversion, (b) observed and predicted data, (c) data misfit and regularization over the course of the inversion.}
+  \caption{(a) Recovered conductivity model from the 2D TDEM inversion, (b) observed and predicted data, (c) data misfit and regularization over the course of the inversion.}
   \label{fig:2Dvoxel_inversion}
 \end{figure}
 
